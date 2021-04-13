@@ -1,0 +1,26 @@
+body {
+  transition: background-color 1s;
+}
+
+img {
+  display: block;
+  width: 100%;
+  /* Setting a max-width*/
+  max-width: 400px;
+  /* Center using margin*/
+  margin: 125px auto;
+  opacity: 0;
+  transform: scale(0.5);
+  /* trasnsition opacity and transforms over 300ms*/
+  transition: all 0.3s;
+}
+
+/* 
+    When image is scrolled into view,
+    we will toggle this to make it 
+    visible and scaled to its initial size. 
+*/
+img.active {
+  opacity: 1;
+  transform: scale(1);
+}
